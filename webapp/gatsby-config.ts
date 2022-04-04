@@ -2,8 +2,8 @@ import type { GatsbyConfig } from "gatsby"
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `new`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Mehran Kamal`,
+    siteUrl: `https://mehrankamal.tech`,
   },
   plugins: [],
 }
