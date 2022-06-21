@@ -1,15 +1,15 @@
 import { Link } from "gatsby";
 import * as React from "react";
+import Layout from "../components/layout";
 
 const AboutPage = () => {
-    return (
-        <main>
-            <title>About Me</title>
-            <h1>About me</h1>
-            <Link to="/">Home</Link>
-            <p>WIP 🚧</p>
-        </main>
-    )
-}
+  return (
+    <main>
+      <Layout pageTitle="Mehran Kamal - About">
+        <p>WIP 🚧</p>
+      </Layout>
+    </main>
+  );
+};
 
 export default AboutPage;

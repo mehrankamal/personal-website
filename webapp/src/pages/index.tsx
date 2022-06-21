@@ -1,16 +1,19 @@
-import { Link } from "gatsby"
-import * as React from "react"
+import * as React from "react";
+import Layout from "../components/layout";
 
 const IndexPage = () => {
   return (
-    <main> 
-      <title>Home Page</title>
-      <h1>Mehran Kamal</h1>
-      <Link to="/about">About</Link>
+    <Layout pageTitle="Mehran Kamal">
       <p>Hi, my name is Mehran Kamal</p>
-      <p>A Student and a Software Engineer based in Karachi, Pakistan. Currently, focused on completing my Final Year Project for degree requirements of BS(Computer Science) from <Link to="https://nu.edu.pk">FAST-NUCES</Link> and crafting Backend Software as SWE Intern at <Link to="https://fenix.life">Fenix Networks</Link></p>
-    </main>
-  )
-}
+      <p>
+        A Student and a Software Engineer based in Karachi, Pakistan. Currently,
+        focused on completing my Final Year Project for degree requirements of
+        BS(Computer Science) from <a href="https://nu.edu.pk">FAST-NUCES</a> and
+        crafting Backend Software as SWE Intern at{" "}
+        <a href="https://fenix.life">Fenix Networks</a>
+      </p>
+    </Layout>
+  );
+};
 
-export default IndexPage
+export default IndexPage;
