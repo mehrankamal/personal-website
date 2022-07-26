@@ -1,4 +1,9 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'Engineering with Mehran'
-theme = "ananke"
+title = 'Mehran Kamal'
+theme = "LoveIt"
+
+[author]
+  name="Mehran Kamal"
+  email="me@mehrankamal.tech"
+  link="https://mehrankamal.tech"

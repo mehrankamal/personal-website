@@ -1,3 +1,4 @@
-[submodule "webapp/themes/ananke"]
-	path = webapp/themes/ananke
-	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "webapp/themes/LoveIt"]
+	path = webapp/themes/LoveIt
+	url = https://github.com/dillonzq/LoveIt.git
+	branch = v0.2.11
