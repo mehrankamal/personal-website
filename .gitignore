@@ -1,2 +1,4 @@
 webapp/public
 webapp/resources
+
+.DS_store
