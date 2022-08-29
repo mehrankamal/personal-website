@@ -2,13 +2,16 @@ baseURL = '/'
 languageCode = 'en-us'
 title = 'Mehran Kamal'
 theme = 'LoveIt'
-hasCJKLanguage = false
 
 enableEmoji = true
 
+paginate = 12
+
+enableRobotsTXT = true
+
 [author]
   name="Mehran Kamal"
-  email="me@mehrankamal.tech"
+  email="mkbalochhoth@gmail.com"
   link="https://mehrankamal.tech"
 
 
@@ -16,13 +19,10 @@ enableEmoji = true
   [[menu.main]]
     weight = 1
     identifier = "about"
-    # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
-    # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
     name = "About"
     url = "/about/"
-    # title will be shown when you hover on this menu link
     title = "Get to know me more"
   [[menu.main]]
     weight = 2
@@ -45,114 +45,83 @@ enableEmoji = true
     title = "Ping me up"
 
 [params]
-  # site default theme ["auto", "light", "dark"]
   defaultTheme = "dark"
-  #  date format
   dateFormat = "02-Jan-2006"
-  # website title for Open Graph and Twitter Cards
   title = "Mehran Kamal"
-  # website description for RSS, SEO, Open Graph and Twitter Cards
   description = "Here we discuss all things Software"
-  # website images for Open Graph and Twitter Cards
   images = ["/logos/m.png"]
 
   # Header config
   [params.header]
-    # desktop header mode ["fixed", "normal", "auto"]
     desktopMode = "fixed"
-    # mobile header mode ["fixed", "normal", "auto"]
     mobileMode = "auto"
-    #  Header title config
     [params.header.title]
-      # URL of the LOGO
       logo = "/logos/m.png"
       # title name
-      name = ""
-      # you can add extra information before the name (HTML format is supported), such as icons
+      name = "Mehran Kamal"
       pre = ""
-      # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
-      #  whether to use typeit animation for title name
       typeit = false
 
-  # Footer config
   [params.footer]
     enable = true
-    #  Custom content (HTML format is supported)
     custom = ''
-    #  whether to show Hugo and theme info
     hugo = false
-    #  whether to show copyright info
     copyright = false
-    #  whether to show the author
     author = true
-    # Site creation time
     since = 2022
-    # license info (HTML format is supported)
     license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
-  #  Section (all posts) page config
   [params.section]
-    # special amount of posts in each section page
     paginate = 20
-    # date format (month and day)
     dateFormat = "01-02"
-    # amount of RSS pages
     rss = 10
 
-  #  List (category or tag) page config
   [params.list]
-    # special amount of posts in each list page
     paginate = 20
-    # date format (month and day)
     dateFormat = "01-02"
-    # amount of RSS pages
     rss = 10
 
   #  App icon config
   [params.app]
-    # optional site title override for the app when added to an iOS home screen or Android launcher
     title = "Mehran Kamal"
-    # whether to omit favicon resource links
     noFavicon = false
-    # modern SVG favicon to use in place of older style .png and .ico files
     svgFavicon = ""
-    # Android browser theme color
     themeColor = "#ffffff"
-    # Safari mask icon color
     iconColor = "#5bbad5"
-    # Windows v8-10 tile color
     tileColor = "#da532c"
 
-  # Home page config
+[params.search]
+  enable = true
+  type = "algolia"
+  contentLength = 4000
+  placeholder = ""
+  maxResultLength = 10
+  snippetLength = 30
+  highlightTag = "em"
+  absoluteURL = false
+  [params.search.algolia]
+    index = ""
+    appID = ""
+    searchKey = ""
+
   [params.home]
-    #  amount of RSS pages
     rss = 10
-    # Home page profile
     [params.home.profile]
       enable = true
-      # URL of avatar shown in home page
       avatarURL = "/images/avatar.jpeg"
-      #  title shown in home page (HTML format is supported)
       title = "Mehran Kamal"
       # subtitle shown in home page (HTML format is supported)
-      subtitle = "Welcome! Here we talk about Recreational Programming, Backend Engineering, DevOps, and Compilers! 😎"
-      # whether to use typeit animation for subtitle
+      subtitle = "Welcome! Here we talk about all things software! 😎"
       typeit = true
-      # whether to show social links
       social = true
-      #  disclaimer (HTML format is supported)
       disclaimer = ""
-    # Home page posts
+    
     [params.home.posts]
       enable = true
-      # special amount of posts in each home posts page
       paginate = 6
-      #  replaced with hiddenFromHomePage in params.page
-      # default behavior when you don't set "hiddenFromHomePage" in front matter
       defaultHiddenFromHomePage = false
 
-  # Social config about the author
   [params.social]
     GitHub = "mehrankamal"
     Linkedin = "mehrankamal36"
@@ -160,68 +129,48 @@ enableEmoji = true
     Instagram = "immehrankamal"
     Facebook = "mehran.kamal.36"
 
-  #  Page global config
   [params.page]
-    #  whether to hide a page from home page
     hiddenFromHomePage = false
-    #  whether to hide a page from search results
     hiddenFromSearch = false
-    #  whether to enable twemoji
     twemoji = false
-    # whether to enable lightgallery
     lightgallery = false
-    #  whether to enable the ruby extended syntax
     ruby = true
-    #  whether to enable the fraction extended syntax
     fraction = true
-    #  whether to enable the fontawesome extended syntax
     fontawesome = true
-    # whether to show link to Raw Markdown content of the content
     linkToMarkdown = true
-    #  whether to show the full text content in RSS
     rssFullText = false
-    #  Table of the contents config
     [params.page.toc]
-      # whether to enable the table of the contents
       enable = true
-      #  whether to keep the static table of the contents in front of the post
       keepStatic = true
-      # whether to make the table of the contents in the sidebar automatically collapsed
       auto = true
-    #  KaTeX mathematical formulas
+    
+    [params.page.code]
+      copy = true
+      maxShownLines = 50
+    
     [params.page.math]
       enable = true
-      #  default inline delimiter is $ ... $ and \( ... \)
       inlineLeftDelimiter = ""
       inlineRightDelimiter = ""
-      #  default block delimiter is $$ ... $$, \[ ... \], \begin{equation} ... \end{equation} and some other functions
       blockLeftDelimiter = ""
       blockRightDelimiter = ""
-      # KaTeX extension copy_tex
       copyTex = true
-      # KaTeX extension mhchem
       mhchem = true
-    #  Code config
-    [params.page.code]
-      # whether to show the copy button of the code block
-      copy = true
-      # the maximum number of lines of displayed code by default
-      maxShownLines = 50
 
     [params.page.share]
       enable = true
       Twitter = true
       Facebook = true
       Linkedin = true
-      Whatsapp = true
+      Whatsapp = false
       Mix = false
     #  Comment config
     [params.page.comment]
-      enable = false
+      enable = true
       # Disqus comment config
       [params.page.comment.disqus]
         # 
-        enable = false
+        enable = true
         # Disqus shortname to use Disqus in posts
         shortname = ""
 
