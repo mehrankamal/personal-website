@@ -13,8 +13,9 @@ hidemeta: true
 comments: false
 ---
 
-Hellooo there! \U0001F44B I am Mehran Kamal! A software engineer based in [Karachi, Pakistan](https://goo.gl/maps/sACWAeiMXrfFa7ct7).
+Hellooo there! :wave: I am Mehran Kamal!
 
+A software engineer based in [Karachi, Pakistan](https://goo.gl/maps/sACWAeiMXrfFa7ct7).
 Currently, working with [Dastgyr Technologies](https://www.dastgyr.com/) as Backend Engineer.
 
 Particularly, interested in large scale Distrubuted Systems and how engineering teams work towards solving the unthinkable.
