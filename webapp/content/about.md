@@ -7,7 +7,6 @@ tags: [""]
 author: "Mehran Kamal"
 # author: ["Me", "You"] # multiple authors
 showToc: false
-TocOpen: false
 draft: false
 hidemeta: true
 comments: false
@@ -15,7 +14,6 @@ comments: false
 
 Hellooo there! :wave: I am Mehran Kamal!
 
-A software engineer based in [Karachi, Pakistan](https://goo.gl/maps/sACWAeiMXrfFa7ct7).
-Currently, working with [Dastgyr Technologies](https://www.dastgyr.com/) as Backend Engineer.
+A software engineer based in [Karachi, Pakistan](https://goo.gl/maps/sACWAeiMXrfFa7ct7). Currently, working with [Zarya App](https://www.zarya.app/) as a Software Engineer.
 
 Particularly, interested in large scale Distrubuted Systems and how engineering teams work towards solving the unthinkable.

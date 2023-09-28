@@ -1,5 +1,5 @@
 baseURL: /
-title: Engineering with Mehran
+title: Mehran Kamal
 theme: "PaperMod"
 paginate: 5
 
@@ -17,7 +17,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Engineering with Mehran
+  title: Mehran Kamal
   description: "Writing about Software and Engineering culture across the globe."
   keywords: [Blog, Portfolio, Software Engineering, Software Craftsmanship]
   author: Mehran Kamal
@@ -30,7 +30,7 @@ params:
   ShowReadingTime: true
   ShowShareButtons: false
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
@@ -46,14 +46,14 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "./static/favicon.ico"
-    favicon16x16: "./static/favicon-16x16.png"
-    favicon32x32: "./static/favicon-32x32.png"
-    apple_touch_icon: "./static/apple-touch-icon.png"
-    safari_pinned_tab: "./static/android-chrome-192x192.png"
+    favicon: "favicon.ico"
+    favicon16x16: "favicon-16x16.png"
+    favicon32x32: "favicon-32x32.png"
+    apple_touch_icon: "apple-touch-icon.png"
+    safari_pinned_tab: "android-chrome-192x192.png"
 
   label:
-    text: "Engineering with Mehran"
+    text: "Mehran Kamal"
 
   # profile-mode
   profileMode:
@@ -73,19 +73,13 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to Engineering with Mehran!
+    Content: Welcome to my website! Hope you may find something useful here.
 
   socialIcons:
     - name: twitter
       url: "https://twitter.com/mehran_kamal"
     - name: github
       url: "https://github.com/mehrankamal"
-    - name: youtube
-      url: "https://youtube.com/@engineeringwithmehran"
-    - name: twitch
-      url: "https://twitch.tv/engineeringwithmehran"
-    - name: instagram
-      url: "https://instagram.com/engineeringwithmehran"
     - name: linkedin
       url: "https://linkedin.com/in/mehrankamal36"
 
@@ -113,18 +107,14 @@ menu:
       name: About
       url: /about/
       weight: 10
-        #  - identifier: blog
-        #    name: Blog
-        #    url: /blog/
-        #    weight: 20
-        # - identifier: readings
-        #   name: Readings
-        #   url: /readings/
-        #   weight: 30
-        #- identifier: projects
-        #  name: Projects
-        #  url: /projects/
-        #  weight: 40
+    - identifier: blogs
+      name: Blog Posts
+      url: /blogs
+      weight: 20
+    - identifier: bookshelf
+      name: Bookshelf
+      url: /bookshelf
+      weight: 30
     - identifier: contact-me
       name: Contact Me
       url: /contact-me/
