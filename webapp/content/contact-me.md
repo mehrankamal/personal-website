@@ -21,6 +21,6 @@ ShowRssButtonInSectionTermList: false
 UseHugoToc: false
 ---
 
-You can reach out to me at [mehrankamal1098@gmail.com](mailto:mehrankamal1098@gmail.com) about anything tech!
+You can reach out to me at [me[at]mehrankamal.com](mailto:me@mehrankamal.com) about anything tech!
 
 

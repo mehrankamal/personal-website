@@ -24,8 +24,8 @@ params:
   # author: ["Me", "You"] # multiple authors
   images: ["static/images/avatar.jpeg"]
   DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
-  disableThemeToggle: false
+  defaultTheme: dark
+  disableThemeToggle: true
 
   ShowReadingTime: true
   ShowShareButtons: false
@@ -108,7 +108,7 @@ menu:
       url: /about/
       weight: 10
     - identifier: blogs
-      name: Blog Posts
+      name: Blog
       url: /blogs
       weight: 20
     - identifier: bookshelf
