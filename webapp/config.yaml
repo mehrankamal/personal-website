@@ -72,8 +72,8 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my website! Hope you may find something useful here.
+    Title: "Hello! :wave:"
+    Content: "I'm Mehran.\nI work as a Software Engineer for [Remoteinterview Inc.](https://www.remoteinterview.io/)."
 
   socialIcons:
     - name: twitter
@@ -103,18 +103,10 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 10
     - identifier: blogs
       name: Blog
       url: /blogs
       weight: 20
-    - identifier: bookshelf
-      name: Bookshelf
-      url: /bookshelf
-      weight: 30
     - identifier: contact-me
       name: Contact Me
       url: /contact-me/
