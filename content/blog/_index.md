@@ -1,4 +1,4 @@
 ---
-title: Blogs
+title: Blog
 weight: 10
 ---
