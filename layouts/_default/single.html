@@ -1,0 +1,36 @@
+{{ define "main" -}}
+
+<script src="https://giscus.app/client.js"
+        data-repo="mehrankamal/personal-website-comments"
+        data-repo-id="R_kgDOMHu41Q"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOMHu41c4CgABn"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+<main class="main layout__main">
+<article class="single-view{{ with .Section }} single-view--{{ . | urlize }}{{ end }}">
+<header>
+<h1 class="title{{ if $.Param "submitted" | default false }} mb--xxs{{ end }}">{{ .Title }}</h1>
+{{ if $.Param "submitted" | default false }}{{ partial "submitted.html" . }}{{ end -}}
+{{ if .Params.tags }}{{ partial "tags.html" . }}{{ end -}}
+</header>
+
+{{ .Content }}
+
+<div class="giscus"></div>
+
+{{ if $.Param "relatedposts" | default false }}{{ partial "related.html" . }}{{ end -}}
+
+{{ if ne .Lastmod .Date }}{{ partial "dates.html" . }}{{ end -}}
+</article>
+</main>
+{{ end -}}
