@@ -12,4 +12,4 @@ You can find me on [Twitter](https://x.com/mehran_kamal), [LinkedIn](https://www
 
 # Contact
 
-Reach out to me at [me[at]mehrankamal.com](mailto:me@mehrankamal.com). I would love to hear from you about anything.
+Reach out to me at [me[at]mehrankamal.com](mailto:me[at]mehrankamal.com). I would love to hear from you about anything.
